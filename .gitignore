@@ -1,0 +1,6 @@
+# Paperclip
+.paperclip/
+
+# OS
+.DS_Store
+Thumbs.db

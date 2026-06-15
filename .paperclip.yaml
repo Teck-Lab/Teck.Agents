@@ -1,0 +1,50 @@
+schema: paperclip/v1
+agents:
+  senior-backend-engineer:
+    inputs:
+      env:
+        GH_TOKEN:
+          kind: secret
+          requirement: required
+  junior-backend-engineer:
+    inputs:
+      env:
+        GH_TOKEN:
+          kind: secret
+          requirement: required
+  database-engineer:
+    inputs:
+      env:
+        GH_TOKEN:
+          kind: secret
+          requirement: required
+        DATABASE_URL:
+          kind: secret
+          requirement: required
+  senior-frontend-engineer:
+    inputs:
+      env:
+        GH_TOKEN:
+          kind: secret
+          requirement: required
+  junior-frontend-engineer:
+    inputs:
+      env:
+        GH_TOKEN:
+          kind: secret
+          requirement: required
+  senior-infrastructure-engineer:
+    inputs:
+      env:
+        KUBECONFIG:
+          kind: secret
+          requirement: required
+        VAULT_TOKEN:
+          kind: secret
+          requirement: optional
+  junior-infrastructure-engineer:
+    inputs:
+      env:
+        KUBECONFIG:
+          kind: secret
+          requirement: required
