@@ -6,5 +6,7 @@ schedule:
   timezone: UTC
   startsAt: '2026-06-22T09:00:00Z'
 project: teck-cloud
+slug: weekly-architecture-review
 ---
+
 

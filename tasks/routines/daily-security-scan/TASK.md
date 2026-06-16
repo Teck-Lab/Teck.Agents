@@ -6,5 +6,7 @@ schedule:
   timezone: UTC
   startsAt: '2026-06-17T08:00:00Z'
 project: teck-cloud
+slug: daily-security-scan
 ---
+
 

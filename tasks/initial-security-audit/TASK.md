@@ -2,7 +2,13 @@
 name: Initial Security Audit
 assignee: security-engineer
 project: teck-cloud
+schedule:
+  startsAt: '2026-06-17T00:00:00Z'
+  timezone: UTC
+slug: initial-security-audit
 ---
+
+
 
 Run comprehensive security audit across all repos:
 1. Scan Teck.Cloud: OWASP top 10, EF Core injection, hard-coded secrets

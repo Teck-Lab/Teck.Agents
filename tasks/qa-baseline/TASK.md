@@ -2,7 +2,13 @@
 name: QA Baseline Test Suite
 assignee: qa-team-lead
 project: teck-cloud
+schedule:
+  startsAt: '2026-06-17T00:00:00Z'
+  timezone: UTC
+slug: qa-baseline
 ---
+
+
 
 Establish baseline test coverage across all repos:
 1. Backend: verify integration test suites run for all services
