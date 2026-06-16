@@ -5,40 +5,40 @@ agents:
       env:
         GH_TOKEN:
           kind: secret
-          requirement: required
+          requirement: optional
   junior-backend-engineer:
     inputs:
       env:
         GH_TOKEN:
           kind: secret
-          requirement: required
+          requirement: optional
   database-engineer:
     inputs:
       env:
         GH_TOKEN:
           kind: secret
-          requirement: required
+          requirement: optional
         DATABASE_URL:
           kind: secret
-          requirement: required
+          requirement: optional
   senior-frontend-engineer:
     inputs:
       env:
         GH_TOKEN:
           kind: secret
-          requirement: required
+          requirement: optional
   junior-frontend-engineer:
     inputs:
       env:
         GH_TOKEN:
           kind: secret
-          requirement: required
+          requirement: optional
   senior-infrastructure-engineer:
     inputs:
       env:
         KUBECONFIG:
           kind: secret
-          requirement: required
+          requirement: optional
         VAULT_TOKEN:
           kind: secret
           requirement: optional
@@ -47,4 +47,4 @@ agents:
       env:
         KUBECONFIG:
           kind: secret
-          requirement: required
+          requirement: optional
