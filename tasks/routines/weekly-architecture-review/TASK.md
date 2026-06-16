@@ -4,6 +4,7 @@ assignee: cto
 recurring: true
 schedule:
   timezone: UTC
-  startsAt: 2026-06-16TUTC
+  startsAt: '2026-06-22T09:00:00Z'
 project: teck-cloud
 ---
+
