@@ -1,50 +1,207 @@
 schema: paperclip/v1
 agents:
-  senior-backend-engineer:
-    inputs:
-      env:
-        GH_TOKEN:
-          kind: secret
-          requirement: optional
-  junior-backend-engineer:
-    inputs:
-      env:
-        GH_TOKEN:
-          kind: secret
-          requirement: optional
+  backend-qa:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  backend-team-leader:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-pro
+      extraArgs:
+      - --agent
+      - orchestrator
+  ceo:
+    adapter: codex_local
+    adapterConfig:
+      model: openai/gpt-5.5
+  cfo:
+    adapter: codex_local
+    adapterConfig:
+      model: openai/gpt-5.5
+  cmo:
+    adapter: codex_local
+    adapterConfig:
+      model: openai/gpt-5.5
+  cto:
+    adapter: codex_local
+    adapterConfig:
+      model: openai/gpt-5.5
   database-engineer:
-    inputs:
-      env:
-        GH_TOKEN:
-          kind: secret
-          requirement: optional
-        DATABASE_URL:
-          kind: secret
-          requirement: optional
-  senior-frontend-engineer:
-    inputs:
-      env:
-        GH_TOKEN:
-          kind: secret
-          requirement: optional
+    adapter: opencode_local
+    adapterConfig:
+      model: kimi-for-coding/k2p7
+      extraArgs:
+      - --agent
+      - orchestrator
+  frontend-qa:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  frontend-team-leader:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-pro
+      extraArgs:
+      - --agent
+      - orchestrator
+  infrastructure-qa:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  infrastructure-team-leader:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-pro
+      extraArgs:
+      - --agent
+      - orchestrator
+  junior-backend-engineer:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  junior-backend-engineer-2:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  junior-backend-engineer-3:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  junior-backend-engineer-4:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
   junior-frontend-engineer:
-    inputs:
-      env:
-        GH_TOKEN:
-          kind: secret
-          requirement: optional
-  senior-infrastructure-engineer:
-    inputs:
-      env:
-        KUBECONFIG:
-          kind: secret
-          requirement: optional
-        VAULT_TOKEN:
-          kind: secret
-          requirement: optional
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  junior-frontend-engineer-2:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  junior-frontend-engineer-3:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  junior-frontend-engineer-4:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
   junior-infrastructure-engineer:
-    inputs:
-      env:
-        KUBECONFIG:
-          kind: secret
-          requirement: optional
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  junior-infrastructure-engineer-2:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  junior-infrastructure-engineer-3:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  junior-infrastructure-engineer-4:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  researcher:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - librarian
+  security-engineer:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-pro
+      extraArgs:
+      - --agent
+      - oracle
+  senior-backend-engineer:
+    adapter: opencode_local
+    adapterConfig:
+      model: kimi-for-coding/k2p7
+      extraArgs:
+      - --agent
+      - orchestrator
+  senior-backend-engineer-2:
+    adapter: opencode_local
+    adapterConfig:
+      model: kimi-for-coding/k2p7
+      extraArgs:
+      - --agent
+      - orchestrator
+  senior-frontend-engineer:
+    adapter: opencode_local
+    adapterConfig:
+      model: kimi-for-coding/k2p7
+      extraArgs:
+      - --agent
+      - orchestrator
+  senior-frontend-engineer-2:
+    adapter: opencode_local
+    adapterConfig:
+      model: kimi-for-coding/k2p7
+      extraArgs:
+      - --agent
+      - orchestrator
+  senior-infrastructure-engineer:
+    adapter: opencode_local
+    adapterConfig:
+      model: kimi-for-coding/k2p7
+      extraArgs:
+      - --agent
+      - orchestrator
+  senior-infrastructure-engineer-2:
+    adapter: opencode_local
+    adapterConfig:
+      model: kimi-for-coding/k2p7
+      extraArgs:
+      - --agent
+      - orchestrator
