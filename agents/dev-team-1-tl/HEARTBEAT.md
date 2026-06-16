@@ -2,6 +2,7 @@
 
 ## 1. Board Check
 - Assigned tasks: any new from CTO?
+- Spec assignments from CTO: run `/opsx:propose` to create structured spec (v4-pro Orchestrator)
 - Senior's tasks: on track? Blocked?
 - Open PRs: any waiting for review?
 

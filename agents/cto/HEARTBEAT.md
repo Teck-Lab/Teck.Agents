@@ -11,6 +11,14 @@
 - Infra Team: any cluster issues?
 - QA Team: any failed deployment gates?
 
+## 3. Spec Review
+- New features from CEO: assign to appropriate Team Lead for spec creation
+- Team Lead runs `/opsx:propose` on v4-pro Orchestrator — cheaper than gpt-5.5
+- Review and approve spec before routing for implementation
+- Dev Team 2: blocked tasks? Review progress.
+- Infra Team: any cluster issues?
+- QA Team: any failed deployment gates?
+
 ## 3. Security
 - Security Engineer: any open P0/P1 vulnerabilities?
 - Last security audit results — remediation in progress?
