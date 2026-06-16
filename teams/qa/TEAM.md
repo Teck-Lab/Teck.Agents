@@ -4,7 +4,13 @@ slug: qa
 description: Quality assurance, testing, and deployment gating for the Teck platform.
 schema: agentcompanies/v1
 version: 1.0.0
+includes:
+  - qa-team-lead
+  - backend-qa
+  - frontend-qa
+  - infrastructure-qa
 ---
+
 # QA Team
 
 Owns quality strategy, test planning, and deployment gating across all four repos.

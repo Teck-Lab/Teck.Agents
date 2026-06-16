@@ -9,6 +9,13 @@ version: 1.0.0
 license: MIT
 authors:
   - name: TeckLab
+tags:
+  - paperclip
+  - e-commerce
+  - dotnet
+  - nextjs
+  - kubernetes
+  - microservices
 goals:
   - Ship production-quality .NET microservices through clean architecture patterns
   - Maintain GitOps-driven deployment pipeline (ArgoCD + Kargo + Kustomize) with zero manual image tagging

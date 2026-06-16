@@ -1,7 +1,9 @@
 ---
 name: QA Baseline Test Suite
 assignee: qa-team-lead
+project: teck-cloud
 ---
+
 Establish baseline test coverage across all repos:
 1. Backend: verify integration test suites run for all services
 2. Frontend: verify build/lint/typecheck pass for all apps

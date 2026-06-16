@@ -4,7 +4,18 @@ slug: engineering
 description: Full-stack development teams (Dev Team 1 + Dev Team 2) covering .NET microservices and Next.js frontend.
 schema: agentcompanies/v1
 version: 1.0.0
+includes:
+  - dev-team-1-tl
+  - dev-team-1-senior
+  - dev-team-1-junior-be
+  - dev-team-1-junior-fe
+  - dev-team-2-tl
+  - dev-team-2-senior
+  - dev-team-2-junior-be
+  - dev-team-2-junior-fe
+  - database-engineer
 ---
+
 # Engineering Team
 
 Two full-stack dev teams, each with a Team Lead, Senior Developer, Junior Backend, and Junior Frontend developer. Database Engineer is shared across teams and reports to CTO.
