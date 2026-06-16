@@ -205,3 +205,40 @@ agents:
       extraArgs:
       - --agent
       - orchestrator
+projects:
+  teck-cloud:
+    workspaces:
+      main:
+        name: Teck.Cloud
+        sourceType: git_repo
+        repoUrl: https://github.com/Teck-Lab/Teck.Cloud.git
+        repoRef: main
+        defaultRef: main
+        isPrimary: true
+  teck-gitops:
+    workspaces:
+      main:
+        name: Teck.GitOps
+        sourceType: git_repo
+        repoUrl: https://github.com/Teck-Lab/Teck.GitOps.git
+        repoRef: main
+        defaultRef: main
+        isPrimary: true
+  teck-terraform:
+    workspaces:
+      main:
+        name: Teck.Terraform
+        sourceType: git_repo
+        repoUrl: https://github.com/Teck-Lab/Teck.Terraform.git
+        repoRef: main
+        defaultRef: main
+        isPrimary: true
+  teck-web:
+    workspaces:
+      main:
+        name: Teck.Web
+        sourceType: git_repo
+        repoUrl: https://github.com/Teck-Lab/Teck.Web.git
+        repoRef: main
+        defaultRef: main
+        isPrimary: true

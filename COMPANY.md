@@ -52,13 +52,21 @@ CEO ────── Product vision, prioritization
 ├── CFO ── Budget, model spend, pricing, ROI
 └── CTO ── Architecture, technical decisions, task routing
     ├── Researcher ── Technical spikes, assigned to squads
-    └── Security Engineer ── Security audits, compliance
+    ├── Security Engineer ── Security audits, compliance
+    ├── Backend Team Leader ── .NET microservices, API gateways
+    │   ├── Senior Backend Engineer 1 + 2 ── Complex services
+    │   ├── Junior Backend Engineer 1-4 ── Scoped tasks (Flash)
+    │   ├── Database Engineer ── Schema, migrations, queries
+    │   └── QA Engineer ── Squad-level testing
+    ├── Frontend Team Leader ── Next.js UI, shared components
+    │   ├── Senior Frontend Engineer 1 + 2 ── Complex pages
+    │   ├── Junior Frontend Engineer 1-4 ── Scoped tasks (Flash)
+    │   └── QA Engineer ── Component testing
+    └── Infrastructure Team Leader ── GitOps, Terraform, K3s
+        ├── Senior Infrastructure Engineer 1 + 2 ── Pipelines, modules
+        ├── Junior Infrastructure Engineer 1-4 ── Scoped tasks (Flash)
+        └── QA Engineer ── Manifest validation
 ```
-
-Squads are imported separately:
-- [Backend Squad](backend/COMPANY.md) — .NET microservices, API gateways
-- [Frontend Squad](frontend/COMPANY.md) — Next.js UI, shared components
-- [Infrastructure Squad](infrastructure/COMPANY.md) — GitOps, Terraform, K3s
 
 ## Projects
 
