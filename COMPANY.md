@@ -53,19 +53,25 @@ CEO ────── Product vision, prioritization
 └── CTO ── Architecture, technical decisions, task routing
     ├── Researcher ── Technical spikes, assigned to squads
     ├── Security Engineer ── Security audits, compliance
-    ├── Backend Team Leader ── .NET microservices, API gateways
-    │   ├── Senior Backend Engineer 1 + 2 ── Complex services
-    │   ├── Junior Backend Engineer 1-4 ── Scoped tasks (Flash)
-    │   ├── Database Engineer ── Schema, migrations, queries
-    │   └── QA Engineer ── Squad-level testing
-    ├── Frontend Team Leader ── Next.js UI, shared components
-    │   ├── Senior Frontend Engineer 1 + 2 ── Complex pages
-    │   ├── Junior Frontend Engineer 1-4 ── Scoped tasks (Flash)
-    │   └── QA Engineer ── Component testing
-    └── Infrastructure Team Leader ── GitOps, Terraform, K3s
-        ├── Senior Infrastructure Engineer 1 + 2 ── Pipelines, modules
-        ├── Junior Infrastructure Engineer 1-4 ── Scoped tasks (Flash)
-        └── QA Engineer ── Manifest validation
+    ├── Database Engineer ── Shared across teams
+    ├── QA Team Lead ── Quality strategy, deployment gating
+    │   ├── Backend QA ── .NET tests, migration verification
+    │   ├── Frontend QA ── Component testing, accessibility
+    │   └── Infrastructure QA ── Manifest validation, Terraform plan review
+    ├── Dev Team 1 ── Full-stack (.NET + Next.js)
+    │   ├── Team Lead ── Work assignment, quality
+    │   ├── Senior ── Complex features, mentorship
+    │   ├── Junior BE ── Scoped .NET tasks (Flash)
+    │   └── Junior FE ── Scoped UI tasks (Flash)
+    ├── Dev Team 2 ── Full-stack (.NET + Next.js)
+    │   ├── Team Lead ── Work assignment, quality
+    │   ├── Senior ── Complex features, mentorship
+    │   ├── Junior BE ── Scoped .NET tasks (Flash)
+    │   └── Junior FE ── Scoped UI tasks (Flash)
+    └── Infrastructure Team ── GitOps, Terraform, K3s
+        ├── Team Lead
+        ├── Senior Engineers (2) ── Pipelines, modules
+        └── Junior Engineers (4) ── Pattern-following (Flash)
 ```
 
 ## Projects

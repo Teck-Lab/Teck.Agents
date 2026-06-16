@@ -7,29 +7,26 @@ agents:
       extraArgs:
       - --agent
       - orchestrator
-  backend-team-leader:
-    adapter: opencode_local
-    adapterConfig:
-      model: deepseek/deepseek-v4-pro
-      extraArgs:
-      - --agent
-      - orchestrator
   ceo:
     adapter: codex_local
     adapterConfig:
       model: openai/gpt-5.5
+    budgetMonthlyCents: 200000
   cfo:
     adapter: codex_local
     adapterConfig:
       model: openai/gpt-5.5
+    budgetMonthlyCents: 100000
   cmo:
     adapter: codex_local
     adapterConfig:
       model: openai/gpt-5.5
+    budgetMonthlyCents: 100000
   cto:
     adapter: codex_local
     adapterConfig:
       model: openai/gpt-5.5
+    budgetMonthlyCents: 200000
   database-engineer:
     adapter: opencode_local
     adapterConfig:
@@ -37,17 +34,16 @@ agents:
       extraArgs:
       - --agent
       - orchestrator
+    budgetMonthlyCents: 100000
+    inputs:
+      env:
+        GH_TOKEN:
+          kind: secret
+          requirement: optional
   frontend-qa:
     adapter: opencode_local
     adapterConfig:
       model: deepseek/deepseek-v4-flash
-      extraArgs:
-      - --agent
-      - orchestrator
-  frontend-team-leader:
-    adapter: opencode_local
-    adapterConfig:
-      model: deepseek/deepseek-v4-pro
       extraArgs:
       - --agent
       - orchestrator
@@ -65,62 +61,7 @@ agents:
       extraArgs:
       - --agent
       - orchestrator
-  junior-backend-engineer:
-    adapter: opencode_local
-    adapterConfig:
-      model: deepseek/deepseek-v4-flash
-      extraArgs:
-      - --agent
-      - orchestrator
-  junior-backend-engineer-2:
-    adapter: opencode_local
-    adapterConfig:
-      model: deepseek/deepseek-v4-flash
-      extraArgs:
-      - --agent
-      - orchestrator
-  junior-backend-engineer-3:
-    adapter: opencode_local
-    adapterConfig:
-      model: deepseek/deepseek-v4-flash
-      extraArgs:
-      - --agent
-      - orchestrator
-  junior-backend-engineer-4:
-    adapter: opencode_local
-    adapterConfig:
-      model: deepseek/deepseek-v4-flash
-      extraArgs:
-      - --agent
-      - orchestrator
-  junior-frontend-engineer:
-    adapter: opencode_local
-    adapterConfig:
-      model: deepseek/deepseek-v4-flash
-      extraArgs:
-      - --agent
-      - orchestrator
-  junior-frontend-engineer-2:
-    adapter: opencode_local
-    adapterConfig:
-      model: deepseek/deepseek-v4-flash
-      extraArgs:
-      - --agent
-      - orchestrator
-  junior-frontend-engineer-3:
-    adapter: opencode_local
-    adapterConfig:
-      model: deepseek/deepseek-v4-flash
-      extraArgs:
-      - --agent
-      - orchestrator
-  junior-frontend-engineer-4:
-    adapter: opencode_local
-    adapterConfig:
-      model: deepseek/deepseek-v4-flash
-      extraArgs:
-      - --agent
-      - orchestrator
+    budgetMonthlyCents: 150000
   junior-infrastructure-engineer:
     adapter: opencode_local
     adapterConfig:
@@ -156,6 +97,7 @@ agents:
       extraArgs:
       - --agent
       - librarian
+    budgetMonthlyCents: 50000
   security-engineer:
     adapter: opencode_local
     adapterConfig:
@@ -163,34 +105,7 @@ agents:
       extraArgs:
       - --agent
       - oracle
-  senior-backend-engineer:
-    adapter: opencode_local
-    adapterConfig:
-      model: kimi-for-coding/k2p7
-      extraArgs:
-      - --agent
-      - orchestrator
-  senior-backend-engineer-2:
-    adapter: opencode_local
-    adapterConfig:
-      model: kimi-for-coding/k2p7
-      extraArgs:
-      - --agent
-      - orchestrator
-  senior-frontend-engineer:
-    adapter: opencode_local
-    adapterConfig:
-      model: kimi-for-coding/k2p7
-      extraArgs:
-      - --agent
-      - orchestrator
-  senior-frontend-engineer-2:
-    adapter: opencode_local
-    adapterConfig:
-      model: kimi-for-coding/k2p7
-      extraArgs:
-      - --agent
-      - orchestrator
+    budgetMonthlyCents: 100000
   senior-infrastructure-engineer:
     adapter: opencode_local
     adapterConfig:
@@ -198,10 +113,100 @@ agents:
       extraArgs:
       - --agent
       - orchestrator
+    budgetMonthlyCents: 150000
   senior-infrastructure-engineer-2:
     adapter: opencode_local
     adapterConfig:
       model: kimi-for-coding/k2p7
+      extraArgs:
+      - --agent
+      - orchestrator
+    budgetMonthlyCents: 150000
+  qa-team-lead:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-pro
+      extraArgs:
+      - --agent
+      - orchestrator
+    budgetMonthlyCents: 100000
+  dev-team-1-tl:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-pro
+      extraArgs:
+      - --agent
+      - orchestrator
+    budgetMonthlyCents: 150000
+    inputs:
+      env:
+        GH_TOKEN:
+          kind: secret
+          requirement: optional
+  dev-team-1-senior:
+    adapter: opencode_local
+    adapterConfig:
+      model: kimi-for-coding/k2p7
+      extraArgs:
+      - --agent
+      - orchestrator
+    budgetMonthlyCents: 200000
+    inputs:
+      env:
+        GH_TOKEN:
+          kind: secret
+          requirement: optional
+  dev-team-1-junior-be:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  dev-team-1-junior-fe:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  dev-team-2-tl:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-pro
+      extraArgs:
+      - --agent
+      - orchestrator
+    budgetMonthlyCents: 150000
+    inputs:
+      env:
+        GH_TOKEN:
+          kind: secret
+          requirement: optional
+  dev-team-2-senior:
+    adapter: opencode_local
+    adapterConfig:
+      model: kimi-for-coding/k2p7
+      extraArgs:
+      - --agent
+      - orchestrator
+    budgetMonthlyCents: 200000
+    inputs:
+      env:
+        GH_TOKEN:
+          kind: secret
+          requirement: optional
+  dev-team-2-junior-be:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
+      extraArgs:
+      - --agent
+      - orchestrator
+  dev-team-2-junior-fe:
+    adapter: opencode_local
+    adapterConfig:
+      model: deepseek/deepseek-v4-flash
       extraArgs:
       - --agent
       - orchestrator
@@ -242,3 +247,49 @@ projects:
         repoRef: main
         defaultRef: main
         isPrimary: true
+routines:
+  daily-security-scan:
+    title: Daily Security Scan
+    assignee:
+      resourceKind: agent
+      resourceKey: security-engineer
+    triggers:
+    - kind: schedule
+      cronExpression: 0 8 * * *
+      enabled: true
+  weekly-architecture-review:
+    title: Weekly Architecture Review
+    assignee:
+      resourceKind: agent
+      resourceKey: cto
+    triggers:
+    - kind: schedule
+      cronExpression: 0 9 * * 1
+      enabled: true
+  daily-deployment-check:
+    title: Daily Deployment Health Check
+    assignee:
+      resourceKind: agent
+      resourceKey: qa-team-lead
+    triggers:
+    - kind: schedule
+      cronExpression: 0 7 * * *
+      enabled: true
+  weekly-spend-review:
+    title: Weekly Model Spend Review
+    assignee:
+      resourceKind: agent
+      resourceKey: cfo
+    triggers:
+    - kind: schedule
+      cronExpression: 0 10 * * 5
+      enabled: true
+  monday-market-brief:
+    title: Monday Market Intelligence Brief
+    assignee:
+      resourceKind: agent
+      resourceKey: cmo
+    triggers:
+    - kind: schedule
+      cronExpression: 0 8 * * 1
+      enabled: true
