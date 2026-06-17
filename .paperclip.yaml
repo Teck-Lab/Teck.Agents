@@ -71,20 +71,6 @@ agents:
       extraArgs:
       - --agent
       - orchestrator
-  junior-infrastructure-engineer-3:
-    adapter: opencode_local
-    adapterConfig:
-      model: deepseek/deepseek-v4-flash
-      extraArgs:
-      - --agent
-      - orchestrator
-  junior-infrastructure-engineer-4:
-    adapter: opencode_local
-    adapterConfig:
-      model: deepseek/deepseek-v4-flash
-      extraArgs:
-      - --agent
-      - orchestrator
   researcher:
     adapter: opencode_local
     adapterConfig:
@@ -102,14 +88,6 @@ agents:
       - oracle
     budgetMonthlyCents: 100000
   senior-infrastructure-engineer:
-    adapter: opencode_local
-    adapterConfig:
-      model: kimi-for-coding/k2p7
-      extraArgs:
-      - --agent
-      - orchestrator
-    budgetMonthlyCents: 150000
-  senior-infrastructure-engineer-2:
     adapter: opencode_local
     adapterConfig:
       model: kimi-for-coding/k2p7
