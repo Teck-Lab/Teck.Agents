@@ -1,5 +1,10 @@
 # QA Team Lead HEARTBEAT — Run on every activation
 
+## 0. GitHub Auth
+- Mint installation token: `export GITHUB_TOKEN=$(gh auth token --hostname github.com) && export GH_TOKEN=$GITHUB_TOKEN`
+- Token expires in 1hr — mint fresh every heartbeat
+
+
 ## 1. Deployment Gate Check
 - Any Kargo promotions pending approval in development?
 - ArgoCD sync status: any unhealthy applications?

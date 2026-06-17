@@ -1,5 +1,10 @@
 # Security Engineer HEARTBEAT — Run on scheduled cadence
 
+## 0. GitHub Auth
+- Mint installation token: `export GITHUB_TOKEN=$(gh auth token --hostname github.com) && export GH_TOKEN=$GITHUB_TOKEN`
+- Token expires in 1hr — mint fresh every heartbeat
+
+
 ## 1. Vulnerability Scan
 - Check Trivy/Grype scan results for all container images
 - Review npm/nuget dependency audit reports

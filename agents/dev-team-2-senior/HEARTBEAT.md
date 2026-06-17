@@ -1,5 +1,10 @@
 # Dev Team 2 Senior HEARTBEAT
 
+## 0. GitHub Auth
+- Mint installation token: `export GITHUB_TOKEN=$(gh auth token --hostname github.com) && export GH_TOKEN=$GITHUB_TOKEN`
+- Token expires in 1hr — mint fresh every heartbeat
+
+
 ## 1. Assignments
 - Check board for new tasks from Dev Team 2 Lead
 - Review Junior BE/FE assignments: scoped correctly?

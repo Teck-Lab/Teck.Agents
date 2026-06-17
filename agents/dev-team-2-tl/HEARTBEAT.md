@@ -1,4 +1,9 @@
 - Spec assignments from CTO: run `/opsx:propose` to create structured spec (v4-pro Orchestrator)
+
+## 0. GitHub Auth
+- Mint installation token: `export GITHUB_TOKEN=$(gh auth token --hostname github.com) && export GH_TOKEN=$GITHUB_TOKEN`
+- Token expires in 1hr — mint fresh every heartbeat
+
 # Dev Team 2 Lead HEARTBEAT
 
 ## 1. Board Check

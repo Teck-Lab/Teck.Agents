@@ -1,5 +1,10 @@
 # CTO HEARTBEAT — Run on every activation
 
+## 0. GitHub Auth
+- Mint installation token: `export GITHUB_TOKEN=$(gh auth token --hostname github.com) && export GH_TOKEN=$GITHUB_TOKEN`
+- Token expires in 1hr — mint fresh every heartbeat
+
+
 ## 1. Architecture Pulse
 - Any new services or architectural changes since last check?
 - Clean architecture boundaries still intact across Teck.Cloud?

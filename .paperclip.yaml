@@ -35,11 +35,6 @@ agents:
       - --agent
       - orchestrator
     budgetMonthlyCents: 100000
-    inputs:
-      env:
-        GH_TOKEN:
-          kind: secret
-          requirement: optional
   frontend-qa:
     adapter: opencode_local
     adapterConfig:
@@ -138,11 +133,6 @@ agents:
       - --agent
       - orchestrator
     budgetMonthlyCents: 150000
-    inputs:
-      env:
-        GH_TOKEN:
-          kind: secret
-          requirement: optional
   dev-team-1-senior:
     adapter: opencode_local
     adapterConfig:
@@ -151,11 +141,6 @@ agents:
       - --agent
       - orchestrator
     budgetMonthlyCents: 200000
-    inputs:
-      env:
-        GH_TOKEN:
-          kind: secret
-          requirement: optional
   dev-team-1-junior-be:
     adapter: opencode_local
     adapterConfig:
@@ -178,11 +163,6 @@ agents:
       - --agent
       - orchestrator
     budgetMonthlyCents: 150000
-    inputs:
-      env:
-        GH_TOKEN:
-          kind: secret
-          requirement: optional
   dev-team-2-senior:
     adapter: opencode_local
     adapterConfig:
@@ -191,11 +171,6 @@ agents:
       - --agent
       - orchestrator
     budgetMonthlyCents: 200000
-    inputs:
-      env:
-        GH_TOKEN:
-          kind: secret
-          requirement: optional
   dev-team-2-junior-be:
     adapter: opencode_local
     adapterConfig:

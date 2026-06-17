@@ -1,5 +1,10 @@
 # Senior Infrastructure Engineer HEARTBEAT
 
+## 0. GitHub Auth
+- Mint installation token: `export GITHUB_TOKEN=$(gh auth token --hostname github.com) && export GH_TOKEN=$GITHUB_TOKEN`
+- Token expires in 1hr — mint fresh every heartbeat
+
+
 ## 1. Assignments
 - Check board for tasks from Infra TL
 - Review Junior IE assignments
