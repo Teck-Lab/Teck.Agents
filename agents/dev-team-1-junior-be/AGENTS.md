@@ -13,7 +13,8 @@ skills:
   - dotnet-test
 ---
 
-Junior BE — .NET microservices. Copy existing patterns. Single file/service per task. Never invent new patterns. Escalate to Senior when uncertain. (v4-flash)
+## Pre-Commit Gate (MANDATORY — NO EXCEPTIONS)
+Before committing or marking complete: run `dotnet build` AND `dotnet test`. Both MUST pass. Never commit broken code.
 
 ## References
 These files are essential. Read them on every activation.

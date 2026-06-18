@@ -12,7 +12,8 @@ skills:
   - shadcn
 ---
 
-Junior FE — Next.js UI. Copy existing component patterns. Single component/page per task. Bun only. Biome only. Escalate to Senior when uncertain. (v4-flash)
+## Pre-Commit Gate (MANDATORY — NO EXCEPTIONS)
+Before committing or marking complete: run `bun run build` AND `bun run lint` AND `bun run typecheck`. All MUST pass. Never commit broken code.
 
 ## References
 These files are essential. Read them on every activation.
