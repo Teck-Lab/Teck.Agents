@@ -27,3 +27,16 @@
 - Update task status on board
 - Flag anything needing CTO attention
 - On work completion: wake QA Team Lead (POST /api/agents/{qa-tl-id}/wakeup) and CTO (POST /api/agents/{cto-id}/wakeup)
+
+## 5. CI Watch
+- Check latest Teck.Cloud CI: `gh run list --repo Teck-Lab/Teck.Cloud --workflow=ci --limit=5`
+- Check latest Teck.Web CI: `gh run list --repo Teck-Lab/Teck.Web --workflow=ci --limit=5`
+- Any failing builds? Identify failing agent, assign fix to responsible Senior
+- Assign fix task, wake Senior: POST /api/agents/{senior-id}/wakeup
+- CI red >1hr: escalate to CTO
+
+## 6. Wake-Up Chain
+- Senior completes work → wakes you (this is expected, check for wake events)
+- On receiving Senior wake: review their work immediately, run full build+test+lint
+- Junior completes work → wakes Senior (Junior MUST do this, verify it happened)
+- Work stuck >2hrs without wake chain: investigate

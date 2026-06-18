@@ -24,3 +24,14 @@
 - Completed work to Dev Team 1 Lead for review
 - Flag security-sensitive changes to Security Engineer
 - Escalate blockers to TL
+
+## 5. Junior Wake Handling
+- Junior BE/FE completes work → wakes you (expected, check for wake events)
+- On receiving Junior wake: review code, run pre-commit checks, provide feedback
+- Junior passes all checks → mark task ready for TL review
+- Junior fails checks → send back with specific feedback, do NOT accept
+
+## 6. CI Watch
+- Check latest CI builds for your team's repos
+- Any failing builds? Fix or assign to responsible Junior
+- CI green after your commits: wake TL (POST /api/agents/{tl-id}/wakeup)

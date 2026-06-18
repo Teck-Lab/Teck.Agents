@@ -7,10 +7,15 @@ agents:
       extraArgs:
       - --agent
       - orchestrator
+    runtimeConfig:
+      heartbeat:
+        enabled: true
+        intervalSec: 1800
+        wakeOnDemand: true
   ceo:
-    adapter: codex_local
+    adapter: opencode_local
     adapterConfig:
-      model: openai/gpt-5.5
+      model: deepseek/deepseek-v4-pro
     budgetMonthlyCents: 200000
     runtimeConfig:
       heartbeat:
@@ -18,9 +23,9 @@ agents:
         intervalSec: 3600
         wakeOnDemand: true
   cfo:
-    adapter: codex_local
+    adapter: opencode_local
     adapterConfig:
-      model: openai/gpt-5.5
+      model: deepseek/deepseek-v4-pro
     budgetMonthlyCents: 100000
     runtimeConfig:
       heartbeat:
@@ -28,9 +33,9 @@ agents:
         intervalSec: 3600
         wakeOnDemand: true
   cmo:
-    adapter: codex_local
+    adapter: opencode_local
     adapterConfig:
-      model: openai/gpt-5.5
+      model: deepseek/deepseek-v4-pro
     budgetMonthlyCents: 100000
     runtimeConfig:
       heartbeat:
@@ -38,9 +43,9 @@ agents:
         intervalSec: 3600
         wakeOnDemand: true
   cto:
-    adapter: codex_local
+    adapter: opencode_local
     adapterConfig:
-      model: openai/gpt-5.5
+      model: deepseek/deepseek-v4-pro
     budgetMonthlyCents: 200000
     runtimeConfig:
       heartbeat:
@@ -62,6 +67,11 @@ agents:
       extraArgs:
       - --agent
       - orchestrator
+    runtimeConfig:
+      heartbeat:
+        enabled: true
+        intervalSec: 1800
+        wakeOnDemand: true
   infrastructure-qa:
     adapter: opencode_local
     adapterConfig:
@@ -69,6 +79,11 @@ agents:
       extraArgs:
       - --agent
       - orchestrator
+    runtimeConfig:
+      heartbeat:
+        enabled: true
+        intervalSec: 1800
+        wakeOnDemand: true
   infrastructure-team-leader:
     adapter: opencode_local
     adapterConfig:
@@ -84,6 +99,11 @@ agents:
       extraArgs:
       - --agent
       - orchestrator
+    runtimeConfig:
+      heartbeat:
+        enabled: true
+        intervalSec: 1800
+        wakeOnDemand: true
   junior-infrastructure-engineer-2:
     adapter: opencode_local
     adapterConfig:
@@ -91,6 +111,11 @@ agents:
       extraArgs:
       - --agent
       - orchestrator
+    runtimeConfig:
+      heartbeat:
+        enabled: true
+        intervalSec: 1800
+        wakeOnDemand: true
   researcher:
     adapter: opencode_local
     adapterConfig:
@@ -212,6 +237,11 @@ agents:
       extraArgs:
       - --agent
       - librarian
+    runtimeConfig:
+      heartbeat:
+        enabled: true
+        intervalSec: 1800
+        wakeOnDemand: true
 projects:
   teck-cloud:
     workspaces:

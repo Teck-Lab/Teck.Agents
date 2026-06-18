@@ -33,6 +33,15 @@
 - Last security audit results — remediation in progress?
 - New dependencies or services needing review?
 
+## 6. CI Watch (MANDATORY)
+- Check all four repos CI status on every heartbeat
+- Teck.Cloud: `gh run list --repo Teck-Lab/Teck.Cloud --workflow=ci --limit=5`
+- Teck.Web: `gh run list --repo Teck-Lab/Teck.Web --workflow=ci --limit=5`
+- Teck.GitOps: `gh run list --repo Teck-Lab/Teck.GitOps --workflow=ci --limit=5`
+- Teck.Terraform: `gh run list --repo Teck-Lab/Teck.Terraform --workflow=ci --limit=5`
+- Any failing builds? Assign fix to responsible Team Lead immediately
+- CI red >1hr without action: escalation to CEO
+- Track CI failure rate: >10% fail rate → root cause analysis required
 ## 6. Plan & Route
 - Review OpenSpec proposals from teams
 - Decompose new features into tasks with clear acceptance criteria

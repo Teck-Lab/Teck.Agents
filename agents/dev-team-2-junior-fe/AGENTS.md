@@ -15,6 +15,9 @@ skills:
 ## Pre-Commit Gate (MANDATORY — NO EXCEPTIONS)
 Before committing or marking complete: run `bun run build` AND `bun run lint` AND `bun run typecheck`. All MUST pass. Never commit broken code.
 
+## Completion Gate (MANDATORY)
+After task completion: wake Senior immediately — POST /api/agents/{senior-id}/wakeup. Never mark complete without waking Senior.
+
 ## References
 These files are essential. Read them on every activation.
 - `./HEARTBEAT.md` — execution and extraction checklist
