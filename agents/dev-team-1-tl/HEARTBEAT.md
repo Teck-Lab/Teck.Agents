@@ -26,3 +26,4 @@
 - Document decisions made this session
 - Update task status on board
 - Flag anything needing CTO attention
+- On work completion: wake QA Team Lead (POST /api/agents/{qa-tl-id}/wakeup) and CTO (POST /api/agents/{cto-id}/wakeup)

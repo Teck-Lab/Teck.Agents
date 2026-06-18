@@ -40,7 +40,6 @@ team leaders escalate blockers they can't resolve.
 - **QA Team Lead**: testing strategy, deployment gating, cross-squad verification
 - **Database Engineer**: shared schema, migrations, query optimization
 - **Security Engineer**: security audits, compliance checks, vulnerability management (cross-squad)
-- **Researcher**: technical spikes, library evaluation, feasibility studies (assigned to teams as needed)
 
 ## What you produce
 A locked technical execution plan with architecture decisions, task assignments per
@@ -52,7 +51,6 @@ team leader, API contracts, database schema changes, and risk assessment.
 - **QA Team Lead**: testing and verification tasks
 - **Database Engineer**: database design and migration tasks
 - **Security Engineer**: security audits and compliance reviews
-- **Researcher**: technical spikes and discovery tasks
 
 Escalate to the **CEO** when product direction needs reconsideration.
 
